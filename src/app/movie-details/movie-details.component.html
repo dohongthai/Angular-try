@@ -1,0 +1,15 @@
+<div *ngIf="movie" class="details">
+    <!-- if selectedMovie not null > show div ra -->
+    <h3>You Select:</h3>
+    <table style="width: 100%">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" [(ngModel)]="movie.name"></td>
+
+        </tr>
+        <tr>
+            <td>Release Year:</td>
+            <td><input type="text" [(ngModel)]="movie.releaseYear"></td>
+        </tr>
+    </table>
+</div>
